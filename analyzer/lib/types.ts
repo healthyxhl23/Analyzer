@@ -1,6 +1,3 @@
-//interface for transcript analysis results
-
-
 export interface SentimentAnalysis {
     score: number; // 0-100
     label: 'positive' | 'neutral' | 'negative';

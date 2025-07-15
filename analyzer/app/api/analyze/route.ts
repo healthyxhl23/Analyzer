@@ -78,7 +78,7 @@ export async function POST(request: NextRequest) {
 }
 
 // Optional: GET endpoint to check AI availability
-export async function GET() {
+export async function GET(_request: NextRequest) {
   try {
     const aiAvailable = !!process.env.GEMINI_API_KEY;
     
